@@ -23,6 +23,8 @@ describe('AppComponent', () => {
   it(`should have as title 'kroger-project'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    app.title = 'kroger-project';
+    fixture.detectChanges();
     expect(app.title).toEqual('kroger-project');
   });
 
